@@ -1,0 +1,1127 @@
+html,body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+header {
+  padding: 0rem 2rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  background-color: #001219;
+}
+
+header.scrolled {
+  background-color: #0e1c28;
+}
+
+nav .nav-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px; 
+  width: 125px;  
+  object-fit: cover;
+  margin-right: -10px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.logo a:hover {
+  color: #a2d2ff;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.menu {
+  display: flex;
+}
+
+nav ul.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.menu li {
+  margin: 0 15px;
+}
+
+nav ul.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+
+nav ul.menu li a:hover {
+  color: #00bfff;
+}
+
+nav ul.menu li a .fab {
+  color: #00bfff;
+}
+
+nav ul.menu li a .fab:hover {
+  color: #fff;
+}
+
+/***HERO PART (UNDER NAVBAR PART) STARTS***/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding: 100px;
+  margin-top: 100px;
+  color: white;
+  background-color: #001219;
+}
+
+.hero-content {
+  max-width: 35%;
+  margin-bottom: 40px;
+}
+
+.hero-content span {
+  color: #a2d2ff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 40px;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #0077b6;
+  text-decoration: none;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 50px;
+  color: white;
+  transition: transform 0.3s ease-in-out; 
+  font-weight: 500;
+}
+
+.cta-button:hover {
+  background-color: #005f8d; 
+  transform: scale(1.05); 
+}
+
+
+.fa-chess-knight {
+  margin-right: 10px;
+}
+
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    width: 30%;
+    max-width: 100%;
+    height: 500px; 
+    overflow: hidden; 
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; 
+}
+
+
+/***HERO PART (UNDER NAVBAR PART) ENDS***/
+
+/***WHY CHESS PART STARTS***/
+
+.testimonials {
+  background-color: #202135;
+  padding: 100px;
+}
+
+.testimonials h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.testimonial-box {
+  max-width: 300px;
+  text-align: center;
+}
+
+.icon-large {
+  font-size: 50px; 
+  color: #00bfff; 
+}
+
+.testimonial-box p {
+  color: white;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.testimonial-box h2 {
+  color: white;
+  margin-top: 15px;
+}
+
+/***WHY CHESS PART ENDS***/
+
+/***WHAT YOU WILL LEARN PART STARTS***/
+
+.main-course-chapters {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  text-align: center;
+  padding: 100px;
+  background-color: #0e1c28;
+}
+
+.main-course-chapters h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.chapter-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px; 
+  margin-top: 75px; 
+}
+
+.chapter-card {
+  padding: 30px; 
+  max-width: 300px; 
+  text-align: center; 
+  border: 2px solid white; 
+  border-radius: 10px; 
+}
+
+.chapter-card img {
+  max-width: 100px; 
+  margin-bottom: 15px; 
+}
+
+.chapter-card h2 {
+  margin-bottom: 30px; /* Başlık ile paragraf arasında boşluk */
+  color: #00bfff;
+  margin-top: 10px;
+}
+
+.chapter-card p {
+  font-size: 18px; 
+  color: white;
+}
+
+/***WHAT YOU WILL LEARN PART ENDS***/
+
+/***LEVELS SECTION STARTS***/
+
+.levels-section {
+  background-color: #202135;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.levels-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.levels-container h1 {
+  color: white;
+}
+
+
+.levels-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 75px;
+}
+
+.levels-card {
+  background-color: #0e1c28;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.levels-card:hover {
+  transform: translateY(-10px);
+}
+
+.levels-card h3 {
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.levels-card .price {
+  font-size: 30px;
+  font-weight: 500;
+  color: #00d9ff;
+  margin-top: 15px;
+}
+
+.levels-card .features {
+  list-style: none;
+  padding: 0;
+  flex-grow: 1;
+  text-align: left;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.levels-card .features li {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.levels-card .features li i {
+  color: #00d9ff;
+  margin-right: 10px;
+}
+
+.btn-container a {
+  display: inline-block;
+  background-color: #0077b6; 
+  color: white; 
+  text-decoration: none; 
+  padding: 12px 25px; 
+  font-size: 16px; 
+  border-radius: 10px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  font-weight: 500; 
+  text-align: center; 
+}
+
+.btn-container a:hover {
+  background-color: #005f8d; 
+  transform: scale(1.05); 
+}
+
+.btn-container a:active {
+  background-color: #004971; 
+  transform: scale(0.95); 
+}
+
+.btn-container a i {
+  margin-right: 8px; 
+  font-size: 16px; 
+}
+
+/***LEVELS SECTION ENDS***/
+
+/***FOOTER PART STARTS***/
+
+.footer {
+  background-color: #0e1c28;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+
+.social-media p {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00bfff; /* Sosyal medya ikonlarının üzerine gelindiğinde renk değişimi */
+}
+
+.footer-bottom {
+  margin-top: 50px;
+}
+
+/***FOOTER PART ENDS***/
+
+
+/***CONTACT PAGE STARTS***/
+
+/***Form Part***/
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 100px;
+  width: 100%;
+ 
+}
+
+.form-info{
+  max-width: 800px;
+}
+
+.have-a-question {
+  font-size: large;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.have-a-question-2 {
+  font-size: large;
+  font-weight: 500;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contact-info{
+  color: #00bfff;
+}
+
+form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"],
+textarea {
+  width: 100%; 
+  padding: 10px; 
+  border: none; 
+  outline: none; 
+  border-bottom: 2px solid #252422; 
+  margin-top: 2rem; 
+  font-size: 1rem; 
+  box-sizing: border-box; 
+}
+
+.form-textarea {
+  height: 150px; 
+  resize: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 2px solid #48bfe3; 
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: #999; 
+  font-style: italic; 
+}
+
+.form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 2rem; 
+  margin-bottom: 4rem;
+  background-color: transparent; 
+  color: #252422; 
+  border: 2px solid #252422; 
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; 
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #252422; 
+  color: white; 
+}
+
+/***LOCATION PART STARTS***/
+
+.location-container {
+  max-width: 800px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.location-container p {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  border: none;
+}
+
+/***LOCATION PART ENDS***/
+
+/***CONTACT PAGE ENDS***/
+
+
+/***ABOUT PAGE STARTS***/
+
+.about-section {
+  background-color: #202135; 
+  padding: 100px 0;
+  margin: 150px auto 0px auto; 
+  width: 100%;
+}
+
+.about-container {
+  background-color: #0e1c28; 
+  padding: 40px;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vision-title,
+.mission-title {
+  font-size: 2em;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #00bfff;
+}
+
+.about-title {
+  font-size: 2em;
+  color: #00bfff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.about-text,
+.vision-text,
+.mission-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: white;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+
+/***ABOUT PAGE ENDS***/
+
+/***COACHES PAGE STARTS***/
+
+.our-team-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  padding: 100px;
+  background-color: #202135;
+}
+
+.our-team-text{
+  color: #00bfff;
+}
+
+.our-team-bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;  /*our-team-bottom-container içindeki her bir our-team-box div'inin aynı yükseklikte olmasını sağlar*/
+  text-align: left;
+  max-width: 1200px;
+  margin-top: 75px;
+  gap: 100px;
+}
+
+.our-team-box {
+  max-width: 500px;
+}
+
+.team-member-img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.our-team-box h4 {
+  color: #00bfff;
+  margin-top: 30px;
+}
+
+.our-team-box p{
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+}
+
+/***COACHES PAGE ENDS***/
+
+/***ACHIEVEMENTS PART STARTS***/
+
+.achievements-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  padding: 100px;
+  background-color: #202135;
+}
+
+.achievements-section h1 {
+  color: #00bfff;
+}
+
+.achievements-cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 75px;
+  margin-top: 75px;
+}
+
+.achievements-cards-container .card {
+  background-color: #0e1c28;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 300px;
+}
+
+.achievements-cards-container .card img {
+  width: 100%;
+  height: 400px; 
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+}
+
+
+.achievements-cards-container .card img:hover {
+  transform: scale(1.1); 
+}
+
+.achievements-cards-container .card p {
+  padding: 30px 20px 20px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  color: white;
+}
+
+/***ACHIEVEMENT PART ENDS***/
+
+/***RESPONSIVENESS STARTS***/
+@media (max-width: 768px) {
+
+  /***HEADER PART STARTS***/
+  .hamburger-menu {
+    display: block; /* Show hamburger menu on medium and small screens */
+  }
+
+  .menu {
+    display: none; /* Hide the regular menu on medium and small screens */
+    flex-direction: column;
+    position: absolute;
+    top: 116px; /* Adjust according to header height */
+    right: 0;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
+    background-color: #001219;
+  }
+
+  .menu.active {
+    display: flex; /* Show menu when active class is added */
+    transform: translateX(0);
+  }
+
+  nav ul.menu li {
+    margin: 10px 0;
+  }
+
+  header {
+    padding: 0.5rem 1rem; 
+  }
+
+  .logo img {
+    height: 100px; 
+    width: 80px;
+  }
+
+  .logo a {
+    font-size: 1.2rem; 
+  }
+
+  /***HEADER PART ENDS***/
+
+  /***HERO (UNDER THE HEADER) PART STARTS***/
+
+  .hero {
+    flex-direction: column; /* İçeriği dikey hizala */
+    padding: 50px 10px; /* Daha dar padding */
+    gap: 50px; /* Öğeler arasındaki boşluğu azalt */
+  }
+
+  .hero-content {
+    max-width: 80%; /* İçeriğin genişliğini artır */
+    text-align: center; /* Metni ortala */
+    margin-bottom: 20px; /* Alt boşluğu azalt */
+  }
+
+  .hero h1 {
+    font-size: 28px; /* Başlık boyutunu küçült */
+  }
+
+  .hero p {
+    font-size: 16px; /* Metin boyutunu küçült */
+    margin-top: 20px; /* Üst boşluğu azalt */
+  }
+
+  .hero-buttons {
+    justify-content: center; /* Butonları ortala */
+  }
+
+  .cta-button {
+    padding: 10px 20px; /* Buton padding'ini küçült */
+    font-size: 14px; /* Font boyutunu küçült */
+  }
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    width: 80%; /* Carousel genişliğini tam genişlik yap */
+    height: 300px; /* Carousel yüksekliğini küçült */
+  }
+
+  .carousel-inner img {
+    height: 300px; /* Carousel görüntü yüksekliğini küçült */
+    object-fit: cover; /* Görüntüyü kırpmak yerine kapla */
+  }
+
+  .carousel-control-prev, 
+  .carousel-control-next {
+    display: none; /* Küçük ekranlarda gezinme düğmelerini gizle */
+  }
+
+  /***HERO (UNDER THE HEADER) PART ENDS***/
+
+  /***WHY CHESS PART STARTS***/
+
+  .testimonials {
+    padding: 100px 20px; /* Daha dar padding */
+  }
+
+  .testimonial-container {
+    flex-direction: column; /* İçeriği dikey olarak hizala */
+    gap: 50px; /* Öğeler arasındaki boşluğu azalt */
+  }
+
+  .testimonial-box {
+    max-width: 100%; /* Kutuların genişliğini artır */
+    margin: 0 auto; /* Kutuları ortala */
+  }
+
+  .testimonials h1 {
+    font-size: 28px; /* Başlık boyutunu küçült */
+  }
+
+  .testimonial-box h2 {
+    font-size: 20px; /* Alt başlık boyutunu küçült */
+  }
+
+  .testimonial-box p {
+    font-size: 16px; /* Paragraf boyutunu küçült */
+    line-height: 1.4; /* Satır yüksekliğini azalt */
+  }
+
+  .icon-large {
+    font-size: 40px; /* İkon boyutunu küçült */
+  }
+
+  /***WHY CHESS PART ENDS***/
+
+  /***WHAT YOU WILL LEARN PART STARTS***/
+
+  .main-course-chapters {
+    padding: 100px 20px; /* Daha dar padding */
+  }
+
+  .chapter-cards {
+    flex-direction: column; /* Kutuları dikey olarak hizala */
+    align-items: center; /* Kutuları ortala */
+    gap: 50px; /* Kutular arasındaki boşluğu azalt */
+  }
+
+  .chapter-card {
+    max-width: 80%; /* Kutuların genişliğini artır */
+    padding: 20px; /* Padding'i küçült */
+  }
+
+  .icon-large {
+    font-size: 40px; /* İkon boyutunu küçült */
+  }
+
+  .main-course-chapters h1 {
+    font-size: 28px; /* Başlık boyutunu küçült */
+  }
+
+  .chapter-card h2 {
+    font-size: 20px; /* Alt başlık boyutunu küçült */
+  }
+
+  .chapter-card p {
+    font-size: 16px; /* Paragraf boyutunu küçült */
+    line-height: 1.4; /* Satır yüksekliğini azalt */
+  }
+
+  /***WHAT YOU WILL LEARN PART ENDS***/
+
+  /***LEVEL PART STARTS***/
+
+  .levels-section {
+    padding: 100px 20px; /* Daha dar padding */
+  }
+
+  .levels-container h1 {
+    font-size: 28px;
+  }
+
+  .levels-cards {
+    flex-direction: column; /* Kartları dikey olarak hizala */
+    align-items: center; /* Kartları ortala */
+    gap: 20px; /* Kartlar arasındaki boşluğu azalt */
+  }
+
+  .levels-card {
+    width: 80%; /* Kart genişliğini artır */
+    margin: 10px 0; /* Kartların arasındaki boşluğu düzenle */
+  }
+
+  .levels-card h3 {
+    font-size: 24px; /* Başlık boyutunu küçült */
+    margin-top: 10px; /* Üst boşluğu azalt */
+  }
+
+  .levels-card .price {
+    font-size: 24px; /* Fiyat boyutunu küçült */
+    margin-top: 10px; /* Üst boşluğu azalt */
+  }
+
+  .levels-card .features li {
+    font-size: 16px; /* Özellikler listesinin font boyutunu küçült */
+  }
+
+  .btn-container a {
+    padding: 10px 20px; /* Buton padding'ini küçült */
+    font-size: 14px; /* Buton font boyutunu küçült */
+  }
+
+  .btn-container a i {
+    font-size: 14px; /* İkon boyutunu küçült */
+  }
+
+  /***LEVEL PART ENDS***/
+
+  /***FOOTER PART STARTS***/
+
+  .footer {
+    padding: 20px 30px; /* Daha dar padding */
+  }
+
+  .footer-content {
+    flex-direction: column; /* İçeriği dikey olarak hizala */
+    align-items: center; /* İçeriği ortala */
+    gap: 20px; /* İçerikler arasındaki boşluğu azalt */
+  }
+
+  .footer .social-media p {
+    text-align: center; /* Metni ortala */
+    font-size: 16px; /* Metin boyutunu küçült */
+  }
+
+  .social-icons {
+    margin-top: 10px; /* Sosyal medya simgeleri için üst boşluk ekle */
+  }
+
+  .footer .social-media a {
+    font-size: 20px; /* Simge boyutunu küçült */
+    margin: 0 8px; /* Simge aralarındaki boşluğu azalt */
+  }
+
+  .footer-bottom p {
+    text-align: center; /* Alt metni ortala */
+    font-size: 14px; /* Metin boyutunu küçült */
+    color: #6c757d; /* Renk tonunu ayarla */
+  }
+
+  /***FOOTER PART ENDS***/
+
+  /***ABOUT US PAGE STARTS***/
+
+  .about-section {
+    padding: 50px 20px; /* Daha dar padding */
+    margin: 100px auto 0px auto; /* Üst marjı küçült */
+  }
+
+  .about-container {
+    padding: 30px; /* İç padding'i küçült */
+    max-width: 100%; /* Genişliği %100 yap */
+  }
+
+  .vision-title,
+  .mission-title {
+    font-size: 1.8em; /* Başlık boyutunu küçült */
+    text-align: left; /* Metni ortala */
+    margin-top: 30px; /* Üst marjı küçült */
+    margin-bottom: 15px; /* Alt marjı küçült */
+  }
+
+  .about-text,
+  .vision-text,
+  .mission-text {
+    font-size: 1em; /* Metin boyutunu küçült */
+    line-height: 1.6; /* Satır yüksekliğini azalt */
+    margin-bottom: 15px; /* Alt marjı küçült */
+  }
+
+  .about-title {
+    font-size: 1.8em; /* Başlık boyutunu küçült */
+    text-align: left; /* Metni ortala */
+    margin-bottom: 30px; /* Alt marjı küçült */
+  }
+
+  /***ABOUT US PAGE ENDS***/
+
+  /***COACHES PART STARTS***/
+
+  .our-team-container {
+    padding: 75px 20px; /* Daha dar padding */
+    margin-top: 100px; /* Üst boşluğu küçült */
+  }
+
+  .our-team-text {
+    font-size: 28px; /* Başlık boyutunu küçült */
+    text-align: center; /* Başlığı ortala */
+  }
+
+  .our-team-bottom-container {
+    flex-direction: column; /* İçeriği dikey olarak hizala */
+    align-items: center; /* İçeriği ortala */
+    gap: 50px; /* Boşlukları azalt */
+  }
+
+  .our-team-box {
+    max-width: 80%; /* Kutuların genişliğini artır */
+    text-align: center; /* Metni ortala */
+  }
+
+  .team-member-img {
+    width: 100%; /* Görsel genişliğini %100 yap */
+    height: auto; /* Yüksekliği otomatik ayarla */
+    border-radius: 10px; /* Kenarları yuvarla */
+  }
+
+  .our-team-box h4 {
+    font-size: 20px; /* Başlık boyutunu küçült */
+    margin-top: 30px; /* Üst boşluğu küçült */
+  }
+
+  .our-team-box p {
+    font-size: 16px; /* Paragraf boyutunu küçült */
+    line-height: 1.6; /* Satır yüksekliğini azalt */
+  }
+
+  /***COACHES PART ENDS***/
+
+  /***ACHIEVEMENT PART STARTS***/
+
+  .achievements-section {
+    padding: 75px 20px; /* Daha dar padding */
+    margin-top: 100px; /* Üst boşluğu küçült */
+  }
+
+  .achievements-section h1 {
+    font-size: 28px; /* Başlık boyutunu küçült */
+    text-align: center; /* Başlığı ortala */
+  }
+
+  .achievements-cards-container {
+    grid-template-columns: repeat(1, 1fr); /* Kartları tek sütun olarak hizala */
+    gap: 30px; /* Boşlukları azalt */
+    margin-top: 50px; /* Üst boşluğu azalt */
+  }
+
+  .achievements-cards-container .card {
+    max-width: 80%; /* Kart genişliğini artır */
+    margin: 0 auto; /* Kartları ortala */
+  }
+
+  .achievements-cards-container .card img {
+    height: auto; /* Yüksekliği otomatik ayarla */
+  }
+
+  .achievements-cards-container .card p {
+    font-size: 16px; /* Metin boyutunu küçült */
+    padding: 20px; /* Padding'i azalt */
+  }
+
+  /***ACHIEVEMENT PART ENDS***/
+
+  /***CONTACT PART STARTS***/
+
+  .contact-us {
+    padding: 75px 20px; /* Daha dar padding */
+    margin-top: 100px; /* Üst boşluğu küçült */
+  }
+
+  .form-info {
+    max-width: 100%; /* Form bilgi kutusunun genişliğini %100 yap */
+    text-align: center; /* Metni ortala */
+  }
+
+  .have-a-question,
+  .have-a-question-2 {
+    font-size: medium; /* Metin boyutunu küçült */
+  }
+
+  .form-container {
+    width: 100%; /* Form konteynerinin genişliğini %100 yap */
+    padding: 0 10px; /* Yanlardan padding ekle */
+  }
+
+  form {
+    width: 100%; /* Form genişliğini %100 yap */
+    padding: 0 10px; /* Yanlardan padding ekle */
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.9rem; /* Yazı boyutunu küçült */
+    margin-top: 1.5rem; /* Üst boşluğu azalt */
+  }
+
+  .form-button {
+    font-size: small; /* Buton yazı boyutunu küçült */
+    padding: 8px; /* Padding'i azalt */
+  }
+
+  .location-container {
+    max-width: 80%; /* Konteyner genişliğini tam ekran yap */
+    margin-bottom: 100px; /* Alt marjı küçült */
+    padding: 0 20px; /* Yanlara padding ekle */
+    text-align: left; /* Metni ortala */
+  }
+
+  .location-container h1 {
+    font-size: 28px; /* Başlık boyutunu küçült */
+    margin-bottom: 20px; /* Alt boşluğu azalt */
+  }
+
+  .location-container p {
+    font-size: 16px; /* Metin boyutunu küçült */
+    line-height: 1.6;
+    margin-bottom: 30px; /* Alt marjı küçült */
+  }
+
+  iframe {
+    width: 100%; /* Haritanın genişliğini tam ekran yap */
+    height: 300px; /* Haritanın yüksekliğini küçült */
+  }
+
+  /***CONTACT PART ENDS***/
+}
+
+/***RESPONSIVENESS ENDS***/
+
+
+
+
