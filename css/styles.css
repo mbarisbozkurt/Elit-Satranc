@@ -596,54 +596,58 @@ iframe {
 
 /***COACHES PAGE STARTS***/
 
-.our-team-container{
+.our-team-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 116px;
   padding: 100px;
   background-color: #202135;
 }
 
-.our-team-text{
+.our-team-text {
   color: #00bfff;
 }
 
 .our-team-bottom-container {
   display: flex;
+  flex-wrap: wrap;  
   justify-content: center;
-  align-items: stretch;  /*our-team-bottom-container içindeki her bir our-team-box div'inin aynı yükseklikte olmasını sağlar*/
+  align-items: stretch;
   text-align: left;
   max-width: 1200px;
+  width: 100%;  
   margin-top: 75px;
-  gap: 100px;
+  gap: 75px;  
 }
 
 .our-team-box {
+  flex: 1 1 45%;  
   max-width: 500px;
+  margin-bottom: 50px; 
 }
 
 .team-member-img {
-  width: 400px;
-  height: 500px;
+  width: 100%;
+  height: 600px;
   object-fit: cover;
   border-radius: 10px;
 }
 
-
 .our-team-box h4 {
   color: #00bfff;
-  margin-top: 30px;
-}
-
-.our-team-box p{
-  font-size: 18px;
-  color: white;
   margin-top: 20px;
 }
 
+.our-team-box p {
+  font-size: 18px;
+  color: white;
+  margin-top: 10px;
+}
+
 /***COACHES PAGE ENDS***/
+
 
 /***ACHIEVEMENTS PART STARTS***/
 
@@ -984,8 +988,8 @@ iframe {
   /***COACHES PART STARTS***/
 
   .our-team-container {
-    padding: 75px 20px; /* Daha dar padding */
-    margin-top: 100px; /* Üst boşluğu küçült */
+    padding: 50px 20px; /* Küçük ekranlarda padding'i azalt */
+    margin-top: 116px; /* Üst boşluğu biraz küçült */
   }
 
   .our-team-text {
@@ -994,30 +998,20 @@ iframe {
   }
 
   .our-team-bottom-container {
-    flex-direction: column; /* İçeriği dikey olarak hizala */
-    align-items: center; /* İçeriği ortala */
-    gap: 50px; /* Boşlukları azalt */
+    flex-direction: column; /* Flex yönünü sütun yap */
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Hücreler arasındaki boşluğu daralt */
   }
 
   .our-team-box {
-    max-width: 80%; /* Kutuların genişliğini artır */
-    text-align: center; /* Metni ortala */
+    flex: 1 1 100%; /* Her kutu tam genişlikte olacak şekilde ayarla */
+    max-width: 80%; /* Maksimum genişliği sınırlama */
+    margin-bottom: 30px; /* Alt boşluğu biraz azalt */
   }
 
   .team-member-img {
-    width: 100%; /* Görsel genişliğini %100 yap */
-    height: auto; /* Yüksekliği otomatik ayarla */
-    border-radius: 10px; /* Kenarları yuvarla */
-  }
-
-  .our-team-box h4 {
-    font-size: 20px; /* Başlık boyutunu küçült */
-    margin-top: 30px; /* Üst boşluğu küçült */
-  }
-
-  .our-team-box p {
-    font-size: 16px; /* Paragraf boyutunu küçült */
-    line-height: 1.6; /* Satır yüksekliğini azalt */
+    height: auto; /* Yüksekliği otomatik yap, oranlı kalsın */
   }
 
   /***COACHES PART ENDS***/
